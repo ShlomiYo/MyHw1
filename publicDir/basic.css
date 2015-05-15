@@ -1,0 +1,55 @@
+
+*{
+
+	margin:0px;
+	padding:0px;
+	color:#333333;
+	font-family: 'Montserrat', sans-serif;
+}
+
+aside, article, header, nav, section, main , footer, body {
+	
+	display:block;
+	
+}
+
+
+body{
+
+	background-color: #fbfcfc;
+}
+
+
+li{
+
+	margin-top:18px;
+	font-weight: bold;
+	font-size:19px; 
+}
+
+header{
+
+	height:140px;
+	background-color: #e74c3c;
+}
+
+
+h1{
+
+	width:1000px;
+	margin:0px auto;
+	padding-top:40px;
+	font-size:50px;
+}
+
+h2{
+
+	font-size:28px; 
+}
+
+
+#wrapper{
+
+	width:1000px;
+	margin:25px auto 0px auto;
+}

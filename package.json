@@ -1,0 +1,23 @@
+{
+  "name": "MyHw1",
+  "version": "1.0.0",
+  "description": "Just Another Web Service, can find anyhelp at my /help window",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shlomi Yosef",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShlomiYo/MyHw1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShlomiYo/MyHw1/issues"
+  },
+  "homepage": "https://github.com/ShlomiYo/MyHw1"
+}
