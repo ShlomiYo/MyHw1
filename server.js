@@ -5,6 +5,21 @@ var bookStoreModule = require('./bookStoreModule');
 var http = require('http');
 var express = require('express');
 var app = express();
+var port = process.env.PORT || 8080;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 app.use(express.static("publicDir"));
@@ -142,8 +157,8 @@ app.get("*", function(req, res){ // anything else was typed
 
 
 
-app.listen(8080);
+app.listen(port);
 
 
 
-console.log('listening on port 8080');
+console.log('listening on port '+port);
