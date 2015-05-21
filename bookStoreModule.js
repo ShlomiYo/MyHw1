@@ -37,6 +37,8 @@ exports.bestSeller = function() {
 	}
 
 
+	console.log('bestSeller Function Ended Successfully');
+
 	return emp[temp];
 }
 
@@ -60,6 +62,7 @@ exports.oldestEmp = function() {
 
 	}
 
+	console.log('oldestEmp Function Ended Successfully');
 
 	return emp[temp];
 }
@@ -84,6 +87,7 @@ exports.oldestMember = function() {
 
 	}
 
+	console.log('oldestMember Function Ended Successfully');
 
 	return mem[temp];
 }
@@ -96,20 +100,25 @@ exports.oldestMember = function() {
 exports.getAllEmp = function() {
 
 
+	console.log('getAllEmp Function Ended Successfully');
 	return emp;
 }
 
 exports.getAllMem = function() {
 
 
+	console.log('getAllMem Function Ended Successfully');
 	return mem;
 }
 
 exports.getAllBooks = function() {
 
 
+	console.log('getAllBooks Function Ended Successfully');
 	return books;
 }
+
+
 
 
 
@@ -134,14 +143,56 @@ exports.getBookById = function(id) {
 
 	if(check == 0){ // no book was found with this id
 
+		console.log('getBookById Function Ended Successfully But NULL Returned');
 		return null
 	}
 	else{
 		
+		console.log('getBookById Function Ended Successfully');
 		return books[i];
 	}
 
 }
+
+
+
+
+
+
+
+exports.getBookByName = function(name) {
+
+	var i=0 , check = 0;
+
+
+	for(i = 0 ; i < books.length; i++){
+
+
+		if(name == books[i].name){
+
+			check = 1;
+			break;
+		}
+
+	}
+
+
+
+	if(check == 0){ // no book was found with this id
+
+		console.log('getBookByName Function Ended Successfully But NULL Returned');
+		return null
+	}
+	else{
+		
+		console.log('getBookByName Function Ended Successfully');
+		return books[i];
+	}
+
+}
+
+
+
 
 
 
@@ -169,8 +220,11 @@ exports.getBookByPrice = function(price) {
 
 	if(j==0){ // no books was found
 
+		console.log('getBookByPrice Function Ended Successfully But NULL Returned');
 		str = null;
 	}
+
+	console.log('getBookByPrice Function Ended Successfully');
 
 	return str;
 }
@@ -199,10 +253,12 @@ exports.getBookByTitle = function(title) {
 
 	if(j==0){ // no books was found
 
+		console.log('getBookByTitle Function Ended Successfully But NULL Returned');
 		str = null;
 	}
 
 
+	console.log('getBookByTitle Function Ended Successfully');
 	return str;
 }
 
@@ -231,10 +287,12 @@ exports.getBookByBoth = function(price, title) {
 
 	if(j==0){ // no books was found
 
+		console.log('getBookByBoth Function Ended Successfully But NULL Returned');
 		str = null;
 	}
 
 
+	console.log('getBookByBoth Function Ended Successfully');
 	return str;
 
 }

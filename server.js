@@ -2,22 +2,9 @@
 
 var url = require("url");
 var bookStoreModule = require('./bookStoreModule');
-var http = require('http');
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 8080;
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -100,7 +87,7 @@ app.get("/BooksByID/:bookID", function(req, res){
 
 app.get("/BooksByName/:bookName", function(req, res){
 
-	var msg = bookStoreModule.getBookById(req.params.bookID);
+	var msg = bookStoreModule.getBookByName(req.params.bookName);
 
 	app.set("json spaces", 1);
 	res.json(msg);
@@ -140,11 +127,11 @@ app.get("/find", function(req, res){
 	}
 
 
+	console.log('For Your Attention, the return object is a json ARRAY, and might contain more then one result');
 	res.json(msg);
 
 
 });
-
 
 
 
