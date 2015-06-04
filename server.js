@@ -16,6 +16,7 @@ app.get("/oldestMember", function(req, res){
 
 	var msg = bookStoreModule.oldestMember();
 
+    res.setHeader('Content-Type', 'application/json');
 	app.set("json spaces", 1);
 	res.json(msg);
 });
@@ -27,6 +28,7 @@ app.get("/oldestEmp", function(req, res){
 
 	var msg = bookStoreModule.oldestEmp();
 
+    res.setHeader('Content-Type', 'application/json');
 	app.set("json spaces", 1);
 	res.json(msg);
 });
@@ -38,6 +40,7 @@ app.get("/bestSeller", function(req, res){
 
 	var msg = bookStoreModule.bestSeller();
 
+    res.setHeader('Content-Type', 'application/json');
 	app.set("json spaces", 1);
 	res.json(msg);
 });
@@ -48,6 +51,7 @@ app.get("/getAllEmp", function(req, res){
 
 	var msg = bookStoreModule.getAllEmp();
 
+    res.setHeader('Content-Type', 'application/json');
 	app.set("json spaces", 1);
 	res.json(msg);
 });
@@ -58,6 +62,7 @@ app.get("/getAllMem", function(req, res){
 
 	var msg = bookStoreModule.getAllMem();
 
+    res.setHeader('Content-Type', 'application/json');
 	app.set("json spaces", 1);
 	res.json(msg);
 });
@@ -68,6 +73,7 @@ app.get("/getAllBooks", function(req, res){
 
 	var msg = bookStoreModule.getAllBooks();
 
+    res.setHeader('Content-Type', 'application/json');
 	app.set("json spaces", 1);
 	res.json(msg);
 });
@@ -78,6 +84,7 @@ app.get("/BooksByID/:bookID", function(req, res){
 
 	var msg = bookStoreModule.getBookById(req.params.bookID);
 
+    res.setHeader('Content-Type', 'application/json');
 	app.set("json spaces", 1);
 	res.json(msg);
 });
@@ -89,6 +96,7 @@ app.get("/BooksByName/:bookName", function(req, res){
 
 	var msg = bookStoreModule.getBookByName(req.params.bookName);
 
+    res.setHeader('Content-Type', 'application/json');
 	app.set("json spaces", 1);
 	res.json(msg);
 });
@@ -127,6 +135,7 @@ app.get("/find", function(req, res){
 	}
 
 
+    res.setHeader('Content-Type', 'application/json');
 	console.log('For Your Attention, the return object is a json ARRAY, and might contain more then one result');
 	res.json(msg);
 
