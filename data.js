@@ -4,6 +4,7 @@
 var employees = [
 
     {"firstName":"Ned", "lastName":"Starks", "booksSold":108, "age":56},
+    {"firstName":"Old", "lastName":"Person", "booksSold":18, "age":98},
     {"firstName":"Shlomi", "lastName":"Yosef", "booksSold":98, "age":24},
     {"firstName":"David", "lastName":"Halfon", "booksSold":87, "age":25},
     {"firstName":"Jon", "lastName":"Snow", "booksSold":13, "age":30},
