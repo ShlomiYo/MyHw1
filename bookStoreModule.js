@@ -24,7 +24,8 @@ exports.bestSeller = function() {
 
 	var i = 0 , temp = 0;
 	var maxString = emp[i].booksSold;
-
+	var arr = [];
+	
 	for(i = 0 ; i < emp.length; i++){
 
 
@@ -39,7 +40,8 @@ exports.bestSeller = function() {
 
 	console.log('bestSeller Function Ended Successfully');
 
-	return emp[temp];
+	arr = emp[temp];
+	return arr;
 }
 
 
