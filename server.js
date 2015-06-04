@@ -42,7 +42,6 @@ app.get("/bestSeller", function(req, res){
 
     res.setHeader('Content-Type', 'application/json');
 	app.set("json spaces", 1);
-	app.set('json replacer', replacer);
 	res.json(msg);
 });
 
