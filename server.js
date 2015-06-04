@@ -39,7 +39,7 @@ app.get("/bestSeller", function(req, res){
 	var msg = bookStoreModule.bestSeller();
 
 	app.set("json spaces", 1);
-	res.json(msg);
+	res.write(msg);
 });
 
 
